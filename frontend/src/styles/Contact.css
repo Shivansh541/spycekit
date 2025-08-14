@@ -1,0 +1,120 @@
+.contact-page {
+  max-width: 900px;
+  margin: 102px auto 80px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3e2f1c;
+}
+
+.contact-page h1,
+.contact-page h2 {
+  color: #D35400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Contact Info */
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #5a4a35;
+}
+
+/* Contact Form */
+.contact-form-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.success-msg {
+  color: green;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #a84300;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #D35400;
+  box-shadow: 0 0 8px rgba(211, 84, 0, 0.5);
+}
+
+.btn-primary {
+  background-color: #D35400;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #a84300;
+}
+
+/* Map Section */
+.map-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.map-section iframe {
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Social Media */
+.social-media {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #D35400;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  border-bottom: 2px solid #D35400;
+}
+
