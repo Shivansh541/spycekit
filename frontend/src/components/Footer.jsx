@@ -28,13 +28,13 @@ const Footer = () => {
         <div className="footer-social">
           <h3>Follow Us</h3>
           <div className="social-icons">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://instagram.com/spycekit" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faFacebook} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>

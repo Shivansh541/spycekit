@@ -9,12 +9,26 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Here you can handle form submission logic (e.g., send data to backend)
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    await fetch("https://script.google.com/macros/s/AKfycbxtboo6p2MoyyqkPiYhqVXn5jt782mvZxpSHKODwPC56fWvbCcUjlqjUdGPcGOx4n8H/exec", {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify(formData),
+      headers: { "Content-Type": "application/json" },
+    });
+
+    // Don't check response.ok since it's opaque
     setSubmitted(true);
     setFormData({ name: "", email: "", message: "" });
-  };
+  } catch (error) {
+    alert("Error: " + error.message);
+  }
+};
+
+
 
   return (
     <div className="contact-page">
@@ -22,9 +36,9 @@ const Contact = () => {
 
       {/* Contact Info */}
       <section className="contact-info">
-        <p><strong>Phone:</strong> +1 (234) 567-8901</p>
-        <p><strong>Email:</strong> info@yourspices.com</p>
-        <p><strong>Address:</strong> 123 Spice Lane, Flavor Town, USA</p>
+        <p><strong>Phone: </strong><a href="tel:+916386087373">+91 63860 87373</a></p>
+        <p><strong>Email: </strong><a href="mailto:info@spycekit.com">info@spycekit.com</a></p>
+        <p><strong>Address:</strong> 4th floor, Plot no 93, Sector 44, Gurugram, Haryana, India</p>
       </section>
 
       {/* Contact Form */}
@@ -88,9 +102,9 @@ const Contact = () => {
       <section className="social-media">
         <h2>Follow Us</h2>
         <div className="social-icons">
-          <a href="https://instagram.com/yourspices" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="https://instagram.com/spycekit" target="_blank" rel="noreferrer">Instagram</a>
           <a href="https://facebook.com/yourspices" target="_blank" rel="noreferrer">Facebook</a>
-          <a href="https://linkedin.com/company/yourspices" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://linkedin.com/company/spycekit" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </section>
     </div>

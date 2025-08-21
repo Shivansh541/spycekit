@@ -18,7 +18,7 @@
     background: #360000;
   padding: 10px 50px;
 }
-.navbar.scrolled *{
+.navbar.scrolled a{
     color: white;
 }
 .left-nav{

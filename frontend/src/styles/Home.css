@@ -1,4 +1,3 @@
-
 /* About Preview */
 .about-preview {
   padding: 40px 120px;
@@ -26,7 +25,7 @@
 }
 
 .about-preview img {
-  height: 70vh;
+  height: 70%;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
@@ -52,48 +51,39 @@
   font-weight: bold;
 }
 
+/* Buttons */
 .btn-secondary {
-  background-color: #F1C40F;
-  color: #3e2f1c;
-  padding: 10px 24px;
-  border-radius: 25px;
+  display: inline-block;
+  background-color: #d35400;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn-secondary:hover {
-  background-color: #c29b08;
+  background-color: #a84300;
+  transform: translateY(-2px);
 }
 
+.btn-primary {
+  background: #b55227;
+  color: white;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
 
-/* Products Preview */
+.btn-primary:hover {
+  background: #933f1e;
+}
+
 .products-preview {
   background: linear-gradient(135deg, #fff8f0, #fff2e0);
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.products-preview h2 {
-  font-size: 2.4rem;
-  color: #D35400;
-  margin-bottom: 50px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Grid Layout */
-.products-preview-grid {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Products Preview Section */
-.products-preview {
   padding: 60px 20px;
   text-align: center;
 }
@@ -105,18 +95,24 @@
   font-weight: bold;
   letter-spacing: 1px;
 }
-.products-preview-grid{
-    display: flex;
-    gap: 80px;
-    margin-bottom: 25px;
+
+.products-preview-grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
 }
-.product-preview-card{
-    width: 270px;
+
+.product-preview-card {
+  width: 270px;
 }
-.product-preview-card img{
-    width: 270px;
-    transition: transform 0.5s ease;
+
+.product-preview-card img {
+  width: 100%;
+  transition: transform 0.5s ease;
 }
+
 .product-preview-card:hover img {
   transform: scale(1.05);
 }
@@ -134,40 +130,18 @@
   line-height: 1.4;
   padding: 10px 20px;
 }
-/* View All Products Button */
-.btn-secondary {
-  display: inline-block;
-  background: #d35400;
-  color: white;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.btn-secondary:hover {
-  background: #a84300;
-  transform: translateY(-2px);
-}
-
-
 
 .contact-preview {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-  background: #fff4e5; /* warm spice-like background */
-  padding: 2rem;
+  background: #fff4e5;
+  padding: 4rem 2rem;
   text-align: center;
   border-radius: 10px;
 }
 
 .contact-preview h2 {
-font-size: 2.4rem;
-    margin-bottom: 1rem;
-    color: #d35400;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+  color: #d35400;
 }
 
 .contact-preview p {
@@ -192,12 +166,4 @@ font-size: 2.4rem;
   align-items: center;
   gap: 0.4rem;
   font-size: 1.1rem;
-}
-
-.btn-primary {
-  background: #b55227;
-  color: white;
-  padding: 0.6rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
 }

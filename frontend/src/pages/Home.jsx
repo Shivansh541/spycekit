@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Hero from "../components/Hero";
 import '../styles/Home.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
   return (
 
@@ -24,7 +24,7 @@ const Home = () => {
           </ul>
           <a href="/about" className="btn-secondary">Read More</a>
         </div>
-        <img src="/assets/images/freepik__the-style-is-candid-image-photography-with-natural__96395.png" alt="" />
+        <img src="/assets/images/freepik__the-style-is-candid-image-photography-with-natural__96395.webp" alt="" />
       </section>
 
       {/* Featured Products Preview */}
@@ -32,15 +32,15 @@ const Home = () => {
         <h2>Our Signature Spices</h2>
         <div className="products-preview-grid">
           <div className="product-preview-card">
-            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.png" alt="Turmeric Powder" />
+            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.webp" alt="Turmeric Powder" />
             <p>Pure, vibrant turmeric to add warmth and color to your dishes.</p>
           </div>
           <div className="product-preview-card">
-            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.png" alt="Cumin Seeds" />
+            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.webp" alt="Cumin Seeds" />
             <p>Earthy and aromatic seeds perfect for enhancing curries and stews.</p>
           </div>
           <div className="product-preview-card">
-            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.png" alt="Red Chili Powder" />
+            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.webp" alt="Red Chili Powder" />
             <p>Spicy and bold chili powder to add a kick to any meal.</p>
           </div>
         </div>
@@ -58,18 +58,19 @@ const Home = () => {
       </p>
 
       <div className="social-icons">
-        <a href="https://instagram.com/yourspices" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faInstagram} /> Instagram
-        </a>
+<a href="https://instagram.com/spycekit" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon = {faInstagram}/>Instagram
+</a>
+
         <a href="https://facebook.com/yourspices" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebook} /> Facebook
         </a>
-        <a href="https://linkedin.com/company/yourspices" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
         </a>
       </div>
 
-      <a href="/contact" className="btn-primary">Contact Us</a>
+      <a href="/contact" className="btn-secondary">Contact Us</a>
     </section>
 
     </div>
