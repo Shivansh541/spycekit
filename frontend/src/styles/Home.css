@@ -99,13 +99,13 @@
 .products-preview-grid {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 50px;
   flex-wrap: wrap;
   margin-bottom: 25px;
 }
 
 .product-preview-card {
-  width: 270px;
+  width: 350px;
 }
 
 .product-preview-card img {

@@ -32,15 +32,15 @@ const Home = () => {
         <h2>Our Signature Spices</h2>
         <div className="products-preview-grid">
           <div className="product-preview-card">
-            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.webp" alt="Turmeric Powder" />
+            <img src="/assets/images/spices/Turmeric Powder.png" alt="Turmeric Powder" />
             <p>Pure, vibrant turmeric to add warmth and color to your dishes.</p>
           </div>
           <div className="product-preview-card">
-            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.webp" alt="Cumin Seeds" />
+            <img src="/assets/images/spices/Jeera Powder.png" alt="Cumin Seeds" />
             <p>Earthy and aromatic seeds perfect for enhancing curries and stews.</p>
           </div>
           <div className="product-preview-card">
-            <img src="/assets/images/WhatsApp_Image_2025-08-08_at_11.02.00_8cce9761-removebg-preview.webp" alt="Red Chili Powder" />
+            <img src="/assets/images/spices/Red Chilli Powder.png" alt="Red Chili Powder" />
             <p>Spicy and bold chili powder to add a kick to any meal.</p>
           </div>
         </div>
