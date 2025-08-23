@@ -24,7 +24,7 @@ const Home = () => {
           </ul>
           <a href="/about" className="btn-secondary">Read More</a>
         </div>
-        <img src="/assets/images/freepik__the-style-is-candid-image-photography-with-natural__96395.webp" alt="" />
+        <img src="/assets/images/freepik__the-style-is-candid-image-photography-with-natural__95737.png" alt="" />
       </section>
 
       {/* Featured Products Preview */}
