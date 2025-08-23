@@ -30,7 +30,7 @@ const Navbar = () => {
   return (
     <section className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="left-nav">
-        SpyceKit
+        <img src="/assets/images/logo-removebg-preview.png" alt="" />
       </div>
       <div className="right-nav">
         <ul>
