@@ -1,37 +1,37 @@
 import React, { useEffect, useState } from "react";
 import "../styles/About.css";
-  const benefits = [
-    {
-      icon: "🌿",
-      title: "100% Natural",
-      desc: "Pure spices with no artificial colors or preservatives."
-    },
-    {
-      icon: "🚜",
-      title: "Farm to Kitchen",
-      desc: "Sourced directly from trusted farmers with love and care."
-    },
-    {
-      icon: "🧪",
-      title: "Quality Tested",
-      desc: "Every batch is lab-tested to ensure purity and safety."
-    },
-    {
-      icon: "📦",
-      title: "Fresh Packaging",
-      desc: "Sealed to lock aroma and freshness until it reaches you."
-    },
-    {
-      icon: "⚡",
-      title: "Fast Delivery",
-      desc: "Quick, hassle-free delivery right to your doorstep."
-    },
-    {
-      icon: "💰",
-      title: "Affordable Prices",
-      desc: "Premium spices at pocket-friendly prices."
-    }
-  ];
+  // const benefits = [
+  //   {
+  //     icon: "🌿",
+  //     title: "100% Natural",
+  //     desc: "Pure spices with no artificial colors or preservatives."
+  //   },
+  //   {
+  //     icon: "🚜",
+  //     title: "Farm to Kitchen",
+  //     desc: "Sourced directly from trusted farmers with love and care."
+  //   },
+  //   {
+  //     icon: "🧪",
+  //     title: "Quality Tested",
+  //     desc: "Every batch is lab-tested to ensure purity and safety."
+  //   },
+  //   {
+  //     icon: "📦",
+  //     title: "Fresh Packaging",
+  //     desc: "Sealed to lock aroma and freshness until it reaches you."
+  //   },
+  //   {
+  //     icon: "⚡",
+  //     title: "Fast Delivery",
+  //     desc: "Quick, hassle-free delivery right to your doorstep."
+  //   },
+  //   {
+  //     icon: "💰",
+  //     title: "Affordable Prices",
+  //     desc: "Premium spices at pocket-friendly prices."
+  //   }
+  // ];
   
 const reviews = [
     {
@@ -180,7 +180,7 @@ const About = () => {
     </section>
 
       {/* Why Choose Us */}
-    <section className="why-choose-us">
+    {/* <section className="why-choose-us">
       <h2>✨ Why Choose <span>SpyceKit?</span></h2>
       <div className="benefits-grid">
         {benefits.map((item, index) => (
@@ -191,7 +191,7 @@ const About = () => {
           </div>
         ))}
       </div>
-    </section>
+    </section> */}
 
       {/* Testimonials */}
 <section className="testimonials">

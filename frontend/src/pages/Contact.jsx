@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Contact.css";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -102,9 +103,16 @@ const handleSubmit = async (e) => {
       <section className="social-media">
         <h2>Follow Us</h2>
         <div className="social-icons">
-          <a href="https://instagram.com/spycekit" target="_blank" rel="noreferrer">Instagram</a>
-          <a href="https://facebook.com/yourspices" target="_blank" rel="noreferrer">Facebook</a>
-          <a href="https://linkedin.com/company/spycekit" target="_blank" rel="noreferrer">LinkedIn</a>
+<a href="https://instagram.com/spycekit" target="_blank" rel="noopener noreferrer">
+  <FontAwesomeIcon icon = {faInstagram}/>Instagram
+</a>
+
+        <a href="https://facebook.com/yourspices" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faFacebook} /> Facebook
+        </a>
+        <a href="https://www.linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+        </a>
         </div>
       </section>
     </div>

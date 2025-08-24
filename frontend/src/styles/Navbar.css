@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 50px;
-    z-index: 1000;
+    z-index: 100;
     color: white;
     transition: all 0.5s ease;
 }
@@ -39,7 +39,7 @@
 content: "";
     position: absolute;
     left: var(--left);
-    bottom: -4px;
+    bottom: -3px;
     width: 70px;
     height: 2px;
     border-radius: 10px;
@@ -70,4 +70,103 @@ content: "";
 }
 .right-nav a:hover::after{
     display: block;
+}
+.hamButton{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+}
+.hamButton span{
+    height: 3px;
+    width: 27px;
+    background: black;
+    border-radius: 5px;
+}
+.navbar.scrolled .hamButton span{
+    background: white;
+}
+.hamMenu{
+    display: none;
+}
+@media screen and (max-width:900px) {
+    .navbar{
+        padding: 10px 30px;
+    }
+    .navbar.scrolled{
+        padding: 5px 30px;
+    }
+    .right-nav ul{
+        gap: 40px;
+    }
+}
+@media screen and (max-width: 730px) {
+    .right-nav ul{
+        display: none;
+    }
+    .hamMenu{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        padding: 30px 10px;
+        width: 200px;
+        padding-top: 52px;
+        z-index: 200;
+        background: #360000;
+        border-radius: 10px 0 0 10px;;
+        transition: all 0.5s ease-in;
+    }
+    .hamMenu.close{
+        right: -200px;
+        opacity: 0;
+    }
+    .hamMenu ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+    .hamMenu li{
+        width: 100%;
+    }
+    .hamMenu a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: white;
+        padding: 7px 0;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .hamMenu a.active{
+        background: #972600;
+    }
+    .hamMenu button{
+position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 27px;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    }
+    .hamMenu button:hover{
+        background: red;
+    }
+    .hamButton{
+        display: flex;
+    }
 }

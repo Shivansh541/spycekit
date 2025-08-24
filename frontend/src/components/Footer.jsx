@@ -9,8 +9,9 @@ const Footer = () => {
         
         {/* Brand Section */}
         <div className="footer-brand">
-          <h1>Spycekit</h1>
-          <p>Pure Flavors, Packed Fresh — Bringing authentic spices from farm to your kitchen.</p>
+                  <img src="/assets/images/logo-removebg-preview.png" alt="" />
+          <p>Har Swaad ki ek hi kit - Spycekit</p>
+             <p>Bringing authentic spices from farm to your kitchen.</p>
         </div>
 
         {/* Quick Links */}

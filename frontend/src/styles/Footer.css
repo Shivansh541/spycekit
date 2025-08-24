@@ -16,7 +16,9 @@
 .footer-brand {
   max-width: 300px;
 }
-
+.footer-brand img{
+  height: 50px;
+}
 .footer-logo {
   width: 120px;
   margin-bottom: 0.5rem;

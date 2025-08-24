@@ -5,8 +5,8 @@ const Hero = () => {
         <section className="hero">
             <div className="slide1">
                 <div className="left-slide1">
-                    <h1>Har swaad ki ek hi kit – Spycekit.</h1>
-                    <p>From farm to you kitchen - spice that tells a story</p>
+                    <h1>Har swaad ki ek hi kit – Spycekit</h1>
+                    <p>From farm to your kitchen - spice that tells a story</p>
                 </div>
             </div>
         </section>

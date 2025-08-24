@@ -1,12 +1,11 @@
+
 /* About Preview */
 .about-preview {
-  padding: 40px 120px;
+  padding: 4rem 8%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
-  height: calc(100vh - 52px);
-  margin-top: 52px;
+  gap: 40px;
   background-color: #fff8f0; /* Light warm background */
 }
 
@@ -25,7 +24,7 @@
 }
 
 .about-preview img {
-  height: 60%;
+  width: 500px;
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
@@ -84,7 +83,7 @@
 
 .products-preview {
   background: linear-gradient(135deg, #fff8f0, #fff2e0);
-  padding: 60px 20px;
+  padding: 4rem 20px;
   text-align: center;
 }
 
@@ -132,7 +131,7 @@
 }
 
 .contact-preview {
-  background: #fff4e5;
+  background: #fff8f0; /* warm background */
   padding: 4rem 2rem;
   text-align: center;
   border-radius: 10px;

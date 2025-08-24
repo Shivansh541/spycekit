@@ -5,6 +5,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
+  const benefits = [
+    {
+      icon: "🌿",
+      title: "100% Natural",
+      desc: "Pure spices with no artificial colors or preservatives."
+    },
+    {
+      icon: "🚜",
+      title: "Farm to Kitchen",
+      desc: "Sourced directly from trusted farmers with love and care."
+    },
+    {
+      icon: "🧪",
+      title: "Quality Tested",
+      desc: "Every batch is lab-tested to ensure purity and safety."
+    },
+    {
+      icon: "📦",
+      title: "Fresh Packaging",
+      desc: "Sealed to lock aroma and freshness until it reaches you."
+    },
+    {
+      icon: "⚡",
+      title: "Fast Delivery",
+      desc: "Quick, hassle-free delivery right to your doorstep."
+    },
+    {
+      icon: "💰",
+      title: "Affordable Prices",
+      desc: "Premium spices at pocket-friendly prices."
+    }
+  ];
   return (
 
     <div className="home">
@@ -46,7 +78,18 @@ const Home = () => {
         </div>
         <a href="/products" className="btn-secondary">View All Products</a>
       </section>
-
+    <section className="why-choose-us">
+      <h2>✨ Why Choose <span>SpyceKit?</span></h2>
+      <div className="benefits-grid">
+        {benefits.map((item, index) => (
+          <div className="benefit-card" key={index}>
+            <div className="icon">{item.icon}</div>
+            <h3>{item.title}</h3>
+            <p>{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
       {/* Contact Preview */}
     <section className="contact-preview">
       <h2>Get In Touch</h2>

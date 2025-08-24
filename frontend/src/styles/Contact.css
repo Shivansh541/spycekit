@@ -18,9 +18,14 @@
   font-size: 1.1rem;
   margin-bottom: 10px;
   text-align: center;
-  color: #5a4a35;
+  color: #b55227;
 }
-
+.contact-info p strong{
+  color: #a84300;
+}
+.contact-info p a{
+    color: #b55227;
+}
 /* Contact Form */
 .contact-form-section {
   margin-top: 40px;
