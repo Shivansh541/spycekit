@@ -71,14 +71,22 @@
       background: url('../assets/images/mobile\ banner.png') no-repeat center center/cover;
     }
     .left-slide1{
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
       text-align: center;
     }
     .left-slide1 h1{
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
     .left-slide1 p{
-      font-size: 1rem;
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width:480px) {
+    .left-slide1 h1{
+      font-size: 1.8rem;
+    }
+    .left-slide1 p{
+      font-size: 0.9rem;
     }
   }
