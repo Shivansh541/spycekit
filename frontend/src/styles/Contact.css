@@ -1,13 +1,14 @@
 .contact-page {
   max-width: 900px;
-  margin: 102px auto 80px auto;
-  padding: 0 20px;
+margin: auto;
+    padding: 102px 20px 40px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #3e2f1c;
+  background-color: #fffdf8;
 }
 @media screen and (max-width: 480px){
   .contact-page{
-    margin: 82px auto 30px auto;
+    padding: 82px 20px 40px;
   }
 }
 .contact-page h1,
@@ -20,7 +21,7 @@
 /* ==== Contact Info ==== */
 .contact-info {
   max-width: 700px;
-  margin: 40px auto;
+  margin: 20px auto;
   padding: 0 20px;
 }
 
@@ -186,7 +187,7 @@
 
 /* Map Section */
 .map-section {
-  margin-top: 60px;
+  margin-top: 30px;
   text-align: center;
   padding: 20px;
 }

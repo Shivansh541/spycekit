@@ -1,11 +1,11 @@
 
 .about-page {
-  margin: 72px auto 0 auto;
+  padding-top: 62px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #3e2f1c;
   line-height: 1.6;
+  background-color: #fff8f0;
 }
-
 .about-page h1,
 .about-page h2 {
   color: #D35400;
@@ -274,7 +274,7 @@
 /* SourcingQuality.css */
 .sourcing-quality {
   padding: 4rem 8%;
-  background: #fffdf8; /* light warm tone */
+  background: #fff8f0; /* light warm tone */
 }
 
 .sq-container {
@@ -724,7 +724,7 @@
 
 .faq {
   padding: 4rem 8%;
-  background: #fff;
+  background: #fffdf8;
   text-align: center;
 }
 
@@ -757,6 +757,8 @@
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+      text-align: left;
+
 }
 
 .faq-question span {
@@ -824,7 +826,6 @@
 
   .faq-question {
     font-size: 1rem;
-    flex-wrap: wrap; /* prevents breaking issues */
     gap: 8px;
   }
 
