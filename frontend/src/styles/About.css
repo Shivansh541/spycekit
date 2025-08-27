@@ -11,7 +11,6 @@
   color: #D35400;
   margin-bottom: 20px;
 }
-
 .story-section {
   display: flex;
   align-items: center;
@@ -19,10 +18,12 @@
   gap: 2rem;
   padding: 4rem 8%;
   background: #fff8f0; /* warm background */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
 
 .story-content {
   flex: 1;
+  min-width: 280px;
 }
 
 .story-content h1 {
@@ -48,6 +49,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-width: 280px;
 }
 
 .story-image img {
@@ -61,6 +63,69 @@
 .story-image img:hover {
   transform: scale(1.05);
 }
+
+/* ========================= */
+/* Responsive Media Queries  */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .story-section {
+    padding: 3rem 6%;
+    gap: 1.5rem;
+  }
+
+  .story-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .story-content p {
+    font-size: 1rem;
+  }
+
+  .story-image img {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .story-content h1 {
+    font-size: 2rem;
+  }
+
+  .story-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .story-image img {
+    max-width: 350px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .story-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .story-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .story-content p {
+    font-size: 0.95rem;
+  }
+
+  .story-image img {
+    max-width: 100%;
+  }
+}
 .mission-section {
   padding: 4rem 8%;
   background: #fffaf3; /* light spice background */
@@ -71,6 +136,7 @@
   font-size: 2.5rem;
   color: #d35400; /* spice orange-brown */
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .mission-content p {
@@ -80,9 +146,11 @@
   margin: 0 auto 50px auto;
   line-height: 1.7;
 }
-.mission-content p strong{
+
+.mission-content p strong {
   color: #c0392b;
 }
+
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -119,8 +187,91 @@
   color: #555;
   line-height: 1.6;
 }
-/* SourcingQuality.css */
 
+/* ========================= */
+/* Responsive Media Queries  */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .mission-section {
+    padding: 3rem 6%;
+  }
+
+  .mission-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .mission-content p {
+    font-size: 1.1rem;
+  }
+
+  .value-card {
+    padding: 25px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mission-section {
+    padding: 3rem 5%;
+  }
+
+  .mission-content h1 {
+    font-size: 2rem;
+  }
+
+  .mission-content p {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .values-grid {
+    gap: 20px;
+  }
+
+  .value-card img {
+    width: 55px;
+  }
+
+  .value-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .value-card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-section {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .mission-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .mission-content p {
+    font-size: 0.95rem;
+  }
+
+  .value-card {
+    padding: 20px 15px;
+  }
+
+  .value-card img {
+    width: 50px;
+  }
+
+  .value-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .value-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* SourcingQuality.css */
 .sourcing-quality {
   padding: 4rem 8%;
   background: #fffdf8; /* light warm tone */
@@ -151,9 +302,11 @@
   line-height: 1.7;
   margin-bottom: 20px;
 }
-.sq-text p strong{
+
+.sq-text p strong {
   color: #c0392b;
 }
+
 .sq-text ul {
   list-style: none;
   padding: 0;
@@ -186,7 +339,92 @@
   max-width: 500px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
+
+.sq-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ========================= */
+/* Responsive Media Queries  */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .sourcing-quality {
+    padding: 3rem 6%;
+  }
+
+  .sq-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .sq-text p {
+    font-size: 1rem;
+  }
+
+  .sq-image img {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sq-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .sq-text {
+    text-align: center;
+  }
+
+  .sq-text h2 {
+    font-size: 2rem;
+  }
+
+  .sq-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .sq-text ul {
+    text-align: left; /* keep checkmarks aligned */
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .sq-text ul li {
+    font-size: 0.95rem;
+  }
+
+  .sq-image img {
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sourcing-quality {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .sq-text h2 {
+    font-size: 1.6rem;
+  }
+
+  .sq-text p {
+    font-size: 0.95rem;
+  }
+
+  .sq-text ul li {
+    font-size: 0.9rem;
+  }
+
+  .sq-image img {
+    max-width: 100%;
+  }
+}
+
 /* WhyChooseUs.css */
 
 .why-choose-us {
@@ -240,6 +478,63 @@
   color: #555;
   line-height: 1.6;
 }
+
+/* ✅ Tablet */
+@media screen and (max-width: 992px) {
+  .why-choose-us {
+    padding: 3rem 8%;
+  }
+
+  .why-choose-us h2 {
+    font-size: 1.75rem;
+  }
+
+  .benefits-grid {
+    gap: 25px;
+  }
+
+  .benefit-card {
+    padding: 25px 18px;
+  }
+
+  .benefit-card .icon {
+    font-size: 2.2rem;
+  }
+}
+
+/* ✅ Mobile */
+@media screen and (max-width: 600px) {
+  .why-choose-us {
+    padding: 2.5rem 6%;
+  }
+
+  .why-choose-us h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr; /* stack vertically */
+    gap: 20px;
+  }
+
+  .benefit-card {
+    padding: 20px 15px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.95rem;
+  }
+
+  .benefit-card .icon {
+    font-size: 2rem;
+  }
+}
+
 /* Testimonials.css */
 /* Testimonials.css */
 
@@ -330,6 +625,101 @@
 .dot.active {
   background-color: #e07b39;
 }
+
+/* ========================= */
+/* Responsive Media Queries  */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .testimonials {
+    padding: 3rem 6%;
+  }
+
+  .testimonials h2 {
+    font-size: 2rem;
+  }
+
+  .testimonial-slider {
+    height: 230px;
+  }
+
+  .testimonial-slide {
+    width: 350px;
+    padding: 22px 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    padding: 3rem 5%;
+  }
+
+  .testimonials h2 {
+    font-size: 1.8rem;
+  }
+
+  .testimonial-slider {
+    height: auto; /* let content adjust */
+    min-height: 220px;
+  }
+
+  .testimonial-slide {
+    width: 100%;
+    max-width: 95%;
+    padding: 20px 16px;
+  }
+
+  .review-text {
+    font-size: 0.95rem;
+  }
+
+  .reviewer h3 {
+    font-size: 1rem;
+  }
+
+  .stars {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .testimonials h2 {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-slide {
+    padding: 18px 14px;
+    border-radius: 12px;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .reviewer h3 {
+    font-size: 0.95rem;
+  }
+
+  .reviewer span {
+    font-size: 0.85rem;
+  }
+
+  .stars {
+    font-size: 0.95rem;
+  }
+
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
+  }
+}
+
 /* FAQ.css */
 
 .faq {
@@ -392,3 +782,76 @@
   line-height: 1.5;
 }
 
+/* ========================= */
+/* Responsive Media Queries  */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .faq {
+    padding: 3rem 6%;
+  }
+
+  .faq h2 {
+    font-size: 2rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-question span {
+    font-size: 1.3rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 3rem 5%;
+  }
+
+  .faq h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .faq-container {
+    max-width: 100%;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+    flex-wrap: wrap; /* prevents breaking issues */
+    gap: 8px;
+  }
+
+  .faq-answer.open {
+    max-height: 250px; /* extra space for wrapping */
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .faq h2 {
+    font-size: 1.5rem;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+  }
+
+  .faq-question span {
+    font-size: 1.2rem;
+  }
+
+  .faq-answer p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}

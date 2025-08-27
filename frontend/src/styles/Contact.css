@@ -5,7 +5,11 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #3e2f1c;
 }
-
+@media screen and (max-width: 480px){
+  .contact-page{
+    margin: 82px auto 30px auto;
+  }
+}
 .contact-page h1,
 .contact-page h2 {
   color: #D35400;
@@ -13,23 +17,73 @@
   text-align: center;
 }
 
-/* Contact Info */
+/* ==== Contact Info ==== */
+.contact-info {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
 .contact-info p {
   font-size: 1.1rem;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   text-align: center;
   color: #b55227;
+  line-height: 1.6;
 }
-.contact-info p strong{
+
+.contact-info p strong {
   color: #a84300;
 }
-.contact-info p a{
-    color: #b55227;
+
+.contact-info p a {
+  color: #b55227;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+.contact-info p a:hover {
+  color: #a84300;
+}
+
+/* ==== Responsive Font Sizes ==== */
+@media (max-width: 1024px) {
+  .contact-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+  .contact-info p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info {
+    padding: 0 10px;
+  }
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+}
+
 /* Contact Form */
+/* ==== Contact Form Section ==== */
 .contact-form-section {
   margin-top: 40px;
   text-align: center;
+  padding: 0 20px;
+}
+
+.contact-form-section h2 {
+  font-size: 2rem;
+  color: #a84300;
+  margin-bottom: 20px;
 }
 
 .success-msg {
@@ -38,6 +92,7 @@
   margin-bottom: 20px;
 }
 
+/* ==== Form Styling ==== */
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
@@ -59,6 +114,7 @@
   border: 1.5px solid #ccc;
   font-size: 1rem;
   resize: vertical;
+  transition: all 0.3s ease;
 }
 
 .contact-form input:focus,
@@ -68,6 +124,7 @@
   box-shadow: 0 0 8px rgba(211, 84, 0, 0.5);
 }
 
+/* ==== Button Styling ==== */
 .btn-primary {
   background-color: #D35400;
   color: white;
@@ -77,49 +134,103 @@
   font-weight: 600;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   align-self: center;
   margin-top: 10px;
 }
 
 .btn-primary:hover {
   background-color: #a84300;
+  transform: scale(1.05);
 }
+
+/* ==== Responsive Adjustments ==== */
+@media (max-width: 1024px) {
+  .contact-form-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form-section {
+    padding: 0 15px;
+  }
+  .contact-form-section h2 {
+    font-size: 1.6rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+  .btn-primary {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form-section h2 {
+    font-size: 1.4rem;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .btn-primary {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
 
 /* Map Section */
 .map-section {
   margin-top: 60px;
   text-align: center;
+  padding: 20px;
 }
 
+.map-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #a84300;
+}
+
+/* Google Map iframe */
 .map-section iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 350px;
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  border: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Social Media */
-.social-media {
-  margin-top: 60px;
-  text-align: center;
+.map-section iframe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
-.social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .map-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .map-section iframe {
+    height: 300px;
+  }
 }
 
-.social-icons a {
-  color: #D35400;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.2rem;
-  border-bottom: 2px solid transparent;
-  transition: border-color 0.3s ease;
-}
+@media (max-width: 480px) {
+  .map-section h2 {
+    font-size: 1.3rem;
+  }
 
-.social-icons a:hover {
-  border-bottom: 2px solid #D35400;
+  .map-section iframe {
+    height: 250px;
+  }
 }
 

@@ -49,10 +49,10 @@ const Home = () => {
             At SpyceKit, we bring you spices sourced from trusted farmers, packed fresh to preserve their aroma and taste. From your grandmother’s recipes to modern delicacies, our spices turn every meal into a story worth sharing.
           </p>
           <ul className="about-highlights">
-            <li>✅ 100% Natural & Pure</li>
-            <li>✅ No Artificial Colors or Preservatives</li>
-            <li>✅ Sourced Directly from Farms</li>
-            <li>✅ Packed Fresh for Long-Lasting Flavor</li>
+            <li> 100% Natural & Pure</li>
+            <li> No Artificial Colors or Preservatives</li>
+            <li> Sourced Directly from Farms</li>
+            <li> Packed Fresh for Long-Lasting Flavor</li>
           </ul>
           <a href="/about" className="btn-secondary">Read More</a>
         </div>

@@ -28,7 +28,7 @@ const Footer = () => {
         {/* Social Links */}
         <div className="footer-social">
           <h3>Follow Us</h3>
-          <div className="social-icons">
+          <div className="footer-social-icons">
             <a href="https://instagram.com/spycekit" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </a>

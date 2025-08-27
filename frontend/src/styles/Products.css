@@ -1,105 +1,126 @@
-.products-page {
-  margin: 72px auto 80px auto;
-  padding: 0 20px;
+/* ==== Section Styles ==== */
+.products-section {
+  padding: 80px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #3e2f1c;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  text-align: center;
 }
 
-.products-title {
-  width: 100%;
-  text-align: center;
-  font-size: 2rem;
+.products-heading {
+  font-size: 2.5rem;
   color: #d35400;
-  margin-bottom: 10px;
-}
-
-.products-subtitle {
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  color: #6e4e2e;
   margin-bottom: 40px;
 }
 
+/* ==== Grid Layout ==== */
+.spice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3x3 on desktop */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==== Spice Card ==== */
 .spice-card {
   background: rgb(255, 246, 235);
+  border: 1px solid #ddd;
+  border-radius: 12px;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
   cursor: pointer;
-  transition: width 0.5s ease-in-out, box-shadow 0.3s ease;
-  overflow: hidden;
-  width: calc(33.33% - 20px);
-  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .spice-card:hover {
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .spice-card img {
   width: 100%;
+  height: 350px;
+  object-fit: contain;
+  margin-bottom: 15px;
   border-radius: 8px;
-  transition: transform 0.5s ease-in-out;
 }
 
-.spice-card img:hover {
-  transform: scale(1.05);
+.spice-card h3 {
+  font-size: 1.2rem;
+  color: #6e4e2e;
+  margin: 0;
 }
 
-/* expanded card */
-.spice-card.expanded {
-  width: 100%;
+/* ==== Modal Overlay ==== */
+.spice-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
   display: flex;
-  gap: 40px;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.spice-card.expanded img {
-  width: 40%;
-  max-width: 400px;
-}
-
-.spice-details {
-  opacity: 0;
-  transform: translateX(30px);
-  transition: all 0.5s ease-in-out;
-  width: 60%;
+.spice-modal-content {
+  background: #fff;
+  border-radius: 14px;
+  padding: 30px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
+  animation: slideUp 0.3s ease-in-out;
+  text-align: left;
 }
 
-.spice-card.expanded .spice-details {
-  opacity: 1;
-  transform: translateX(0);
+/* ==== Modal Content ==== */
+.spice-modal-content img {
+  width: 350px;
+  display: block;
+  margin: 0 auto 20px auto;
 }
 
-.spice-details h2 {
+.spice-modal-content h2 {
+  font-size: 1.8rem;
   color: #d35400;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
+.spice-modal-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #3e2f1c;
+}
+
+/* ==== Highlights ==== */
 .spice-highlights {
-  margin-top: 15px;
+  margin: 15px 0;
   padding-left: 20px;
   list-style: "✔  ";
   color: #2c3e50;
 }
 
+.spice-highlights li {
+  margin-bottom: 8px;
+}
+
+/* ==== Close Button ==== */
 .close-btn {
   position: absolute;
-  top: -10px;
-  right: -10px;
+  top: 12px;
+  right: 12px;
   background: #fff;
   border: 1px solid #ccc;
   border-radius: 50%;
   font-size: 18px;
   cursor: pointer;
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -108,4 +129,49 @@
 
 .close-btn:hover {
   background: #f4e1d2;
+}
+
+/* ==== Animations ==== */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* ==== Responsive Grid ==== */
+@media (max-width: 1024px) {
+  .spice-grid {
+    grid-template-columns: repeat(2, 1fr); /* ✅ 2x2 on tablets */
+  }
+    .products-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .spice-grid {
+    grid-template-columns: 1fr; /* ✅ Single column on mobile */
+  }
+  .spice-modal-content {
+    width: 95%;
+    max-height: 85vh;
+    padding: 20px;
+  }
+  
+  .spice-modal-content img {
+    width: 250px;
+  }
+  .products-heading {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 450px){
+  .spice-card img{
+    height: 300px;
+  }
+  
 }

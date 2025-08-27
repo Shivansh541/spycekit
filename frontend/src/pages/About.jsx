@@ -64,7 +64,7 @@ const About = () => {
       setCurrent((prev) => (prev + 1) % reviews.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, [reviews.length]);
+  }, []);
 
     const questions = [
     {
