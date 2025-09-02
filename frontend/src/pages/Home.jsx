@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import '../styles/Home.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import {faEnvelope, faPhone} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 const Home = () => {
   const benefits = [
     {
@@ -78,43 +78,43 @@ const Home = () => {
         </div>
         <a href="/products" className="btn-secondary">View All Products</a>
       </section>
-    <section className="why-choose-us">
-      <h2>✨ Why Choose <span>SpyceKit?</span></h2>
-      <div className="benefits-grid">
-        {benefits.map((item, index) => (
-          <div className="benefit-card" key={index}>
-            <div className="icon">{item.icon}</div>
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+      <section className="why-choose-us">
+        <h2>✨ Why Choose <span>SpyceKit?</span></h2>
+        <div className="benefits-grid">
+          {benefits.map((item, index) => (
+            <div className="benefit-card" key={index}>
+              <div className="icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* Contact Preview */}
-    <section className="contact-preview">
-      <h2>Get In Touch</h2>
-      <p>
-        <FontAwesomeIcon icon={faEnvelope} />{" "}
-        <a href="mailto:info@spycekit.com">info@spycekit.com</a> |{" "}
-        <FontAwesomeIcon icon={faPhone} />{" "}
-        <a href="tel:+916386087373">+91 63860 87373</a>
-      </p>
+      <section className="contact-preview">
+        <h2>Get In Touch</h2>
+        <p>
+          <FontAwesomeIcon icon={faEnvelope} />{" "}
+          <a href="mailto:info@spycekit.com">info@spycekit.com</a> |{" "}
+          <FontAwesomeIcon icon={faPhone} />{" "}
+          <a href="tel:+916386087373">+91 63860 87373</a>
+        </p>
 
-      <div className="social-icons">
-<a href="https://instagram.com/spycekit" target="_blank" rel="noopener noreferrer">
-  <FontAwesomeIcon icon = {faInstagram}/>Instagram
-</a>
+        <div className="social-icons">
+          <a href="https://instagram.com/spycekit" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />Instagram
+          </a>
 
-        <a href="https://facebook.com/yourspices" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebook} /> Facebook
-        </a>
-        <a href="https://www.linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-        </a>
-      </div>
+          <a href="https://facebook.com/yourspices" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFacebook} /> Facebook
+          </a>
+          <a href="https://www.linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+          </a>
+        </div>
 
-      <a href="/contact" className="btn-secondary">Contact Us</a>
-    </section>
+        <a href="/contact" className="btn-secondary">Contact Us</a>
+      </section>
 
     </div>
   );

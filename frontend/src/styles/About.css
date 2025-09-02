@@ -1,14 +1,12 @@
 
 .about-page {
   padding-top: 62px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #3e2f1c;
   line-height: 1.6;
-  background-color: #fff8f0;
+  background-color: #1a1a1a
 }
 .about-page h1,
 .about-page h2 {
-  color: #D35400;
+  color: #f39c12;
   margin-bottom: 20px;
 }
 .story-section {
@@ -17,7 +15,6 @@
   justify-content: space-between;
   gap: 2rem;
   padding: 4rem 8%;
-  background: #fff8f0; /* warm background */
   flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
 
@@ -28,7 +25,7 @@
 
 .story-content h1 {
   font-size: 2.5rem;
-  color: #d35400; /* spice orange */
+  color: #f39c12; /* spice orange */
   margin-bottom: 1rem;
   font-weight: 700;
 }
@@ -36,12 +33,12 @@
 .story-content p {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: #444;
+  color: #ddd;
   margin-bottom: 1rem;
 }
 
 .story-content strong {
-  color: #c0392b; /* deep spice red */
+  color: #ff8800; /* deep spice red */
 }
 
 .story-image {
@@ -128,27 +125,26 @@
 }
 .mission-section {
   padding: 4rem 8%;
-  background: #fffaf3; /* light spice background */
   text-align: center;
 }
 
 .mission-content h1 {
   font-size: 2.5rem;
-  color: #d35400; /* spice orange-brown */
+  color: #f39c12; /* spice orange-brown */
   margin-bottom: 20px;
   font-weight: 700;
 }
 
 .mission-content p {
   font-size: 1.2rem;
-  color: #444;
+  color: #ddd;
   max-width: 700px;
   margin: 0 auto 50px auto;
   line-height: 1.7;
 }
 
 .mission-content p strong {
-  color: #c0392b;
+  color: #ff8800;
 }
 
 .values-grid {
@@ -159,7 +155,7 @@
 }
 
 .value-card {
-  background: #ffffff;
+  background: #222;
   padding: 30px 20px;
   border-radius: 15px;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
@@ -178,13 +174,13 @@
 
 .value-card h3 {
   font-size: 1.3rem;
-  color: #b34700;
+  color: #ff8800;
   margin-bottom: 10px;
 }
 
 .value-card p {
   font-size: 1rem;
-  color: #555;
+  color: #ddd;
   line-height: 1.6;
 }
 
@@ -274,7 +270,6 @@
 /* SourcingQuality.css */
 .sourcing-quality {
   padding: 4rem 8%;
-  background: #fff8f0; /* light warm tone */
 }
 
 .sq-container {
@@ -293,18 +288,18 @@
 .sq-text h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #d35400;
+  color: #f39c12;
 }
 
 .sq-text p {
   font-size: 1.1rem;
-  color: #555;
+  color: #ddd;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
 .sq-text p strong {
-  color: #c0392b;
+  color: #ff8800;
 }
 
 .sq-text ul {
@@ -314,7 +309,7 @@
 
 .sq-text ul li {
   font-size: 1rem;
-  color: #444;
+  color: #ddd;
   margin: 10px 0;
   padding-left: 25px;
   position: relative;
@@ -324,7 +319,7 @@
   content: "✔";
   position: absolute;
   left: 0;
-  color: #e07b39; /* spice orange */
+  color: #f39c12; /* spice orange */
   font-weight: bold;
 }
 
@@ -429,18 +424,18 @@
 
 .why-choose-us {
   padding: 4rem 10%;
-  background: #fff8f0; /* warm background */
+  background: #1a1a1a;
   text-align: center;
 }
 
 .why-choose-us h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #d35400;
+  color: #f39c12;
 }
 
 .why-choose-us h2 span {
-  color: #333; /* spice orange */
+  color: #ccc; /* spice orange */
 }
 
 .benefits-grid {
@@ -450,7 +445,7 @@
 }
 
 .benefit-card {
-  background: #fffdf8;
+  background: #222;
   border-radius: 16px;
   padding: 30px 20px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
@@ -470,12 +465,12 @@
 .benefit-card h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #222;
+  color: #ff8800;
 }
 
 .benefit-card p {
   font-size: 1rem;
-  color: #555;
+  color: #ddd;
   line-height: 1.6;
 }
 
@@ -540,7 +535,6 @@
 
 .testimonials {
   padding: 4rem 8%;
-  background: #fdf9f4;
   text-align: center;
   position: relative;
 }
@@ -548,7 +542,7 @@
 .testimonials h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #d35400;
+  color: #f39c12;
 }
 
 .testimonial-slider {
@@ -561,7 +555,7 @@
 }
 
 .testimonial-slide {
-  background: #fff;
+  background: #222;
   border-radius: 16px;
   padding: 25px 20px;
   width: 400px;
@@ -585,26 +579,26 @@
 .review-text {
   font-size: 1rem;
   font-style: italic;
-  color: #444;
+  color: #ddd;
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
 .reviewer h3 {
   font-size: 1.1rem;
-  color: #222;
+  color: #ff8800;
   margin: 5px 0 3px;
 }
 
 .reviewer span {
   font-size: 0.9rem;
-  color: #777;
+  color: #ccc;
 }
 
 .stars {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: #e07b39;
+  color: #ff8800;
 }
 
 .slider-dots {
@@ -615,7 +609,7 @@
   height: 12px;
   width: 12px;
   margin: 0 6px;
-  background-color: #ccc;
+  background-color: #777;
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
@@ -724,14 +718,14 @@
 
 .faq {
   padding: 4rem 8%;
-  background: #fffdf8;
+  background: #101010;
   text-align: center;
 }
 
 .faq h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
-  color: #333;
+  color: #f39c12;
 }
 
 .faq-container {
@@ -741,7 +735,7 @@
 }
 
 .faq-item {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #666;
   padding: 15px 0;
 }
 
@@ -752,7 +746,7 @@
   outline: none;
   font-size: 1.1rem;
   font-weight: 600;
-  color: #222;
+  color: #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -764,7 +758,7 @@
 .faq-question span {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #e07b39;
+  color: #ff8800;
 }
 
 .faq-answer {
@@ -780,7 +774,7 @@
 
 .faq-answer p {
   font-size: 0.95rem;
-  color: #555;
+  color: #ddd;
   line-height: 1.5;
 }
 

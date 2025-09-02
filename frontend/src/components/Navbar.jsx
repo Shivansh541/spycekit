@@ -17,32 +17,32 @@ const Navbar = () => {
   const handleClick = (left) => {
     document.querySelector(':root').style.setProperty('--left', `${left}%`)
   }
-      if(window.outerWidth<=900){
-        switch (location.pathname) {
-        case "/": handleClick(0)
+  if (window.outerWidth <= 900) {
+    switch (location.pathname) {
+      case "/": handleClick(0)
         break
-        case '/about': handleClick(27.5);
+      case '/about': handleClick(27.5);
         break
-        case '/products': handleClick(55);
+      case '/products': handleClick(55);
         break
-        case '/contact': handleClick(82.5);
+      case '/contact': handleClick(82.5);
         break
-        default: handleClick(0)
-        }
+      default: handleClick(0)
     }
-    else{
-      switch (location.pathname) {
-        case "/": handleClick(0)
+  }
+  else {
+    switch (location.pathname) {
+      case "/": handleClick(0)
         break
-        case '/about': handleClick(28.5);
+      case '/about': handleClick(28.5);
         break
-        case '/products': handleClick(57);
+      case '/products': handleClick(57);
         break
-        case '/contact': handleClick(85.5);
+      case '/contact': handleClick(85.5);
         break
-        default: handleClick(0)
-      }
+      default: handleClick(0)
     }
+  }
   return (
     <section className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="left-nav">
@@ -55,51 +55,51 @@ const Navbar = () => {
           <li><Link to="/products">Products</Link></li>
           <li><Link to="/contact">Contact</Link></li>
         </ul>
-        <div onClick={()=>setShowHamMenu(true)} className="hamButton" >
+        <div onClick={() => setShowHamMenu(true)} className="hamButton" >
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
       <div className={`hamMenu ${showHamMenu ? "open" : "close"}`}>
-        <button onClick={()=>setShowHamMenu(false)}>&times;</button>
+        <button onClick={() => setShowHamMenu(false)}>&times;</button>
         <ul>
-<li>
-    <NavLink
-      to="/" 
-      className={({ isActive }) => isActive ? "active" : ""}
-      onClick={() => setShowHamMenu(false)}
-    >
-      Home
-    </NavLink>
-  </li>
-  <li>
-    <NavLink 
-      to="/about" 
-      className={({ isActive }) => isActive ? "active" : ""}
-      onClick={() => setShowHamMenu(false)}
-    >
-      About
-    </NavLink>
-  </li>
-  <li>
-    <NavLink 
-      to="/products" 
-      className={({ isActive }) => isActive ? "active" : ""}
-      onClick={() => setShowHamMenu(false)}
-    >
-      Products
-    </NavLink>
-  </li>
-  <li>
-    <NavLink 
-      to="/contact" 
-      className={({ isActive }) => isActive ? "active" : ""}
-      onClick={() => setShowHamMenu(false)}
-    >
-      Contact
-    </NavLink>
-  </li>
+          <li>
+            <NavLink
+              to="/"
+              className={({ isActive }) => isActive ? "active" : ""}
+              onClick={() => setShowHamMenu(false)}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => isActive ? "active" : ""}
+              onClick={() => setShowHamMenu(false)}
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/products"
+              className={({ isActive }) => isActive ? "active" : ""}
+              onClick={() => setShowHamMenu(false)}
+            >
+              Products
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => isActive ? "active" : ""}
+              onClick={() => setShowHamMenu(false)}
+            >
+              Contact
+            </NavLink>
+          </li>
         </ul>
       </div>
     </section>

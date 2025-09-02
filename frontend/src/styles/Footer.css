@@ -1,6 +1,6 @@
 .footer {
-  background-color: #360000; /* warm spice tone */
-  color: white;
+  background-color: #0d0d0d; /* darker than body */
+  color: #ddd; /* light text for contrast */
   padding: 2rem 1rem;
 }
 
@@ -16,8 +16,14 @@
 .footer-brand {
   max-width: 300px;
 }
-.footer-brand img{
+.footer-brand img {
   height: 50px;
+  filter: brightness(0.9);
+}
+@media screen and (max-width:480px) {
+  .footer-brand img{
+    height: 40px;
+  }
 }
 .footer-logo {
   width: 120px;
@@ -28,6 +34,7 @@
 .footer-social h3 {
   margin-bottom: 1rem;
   font-size: 1.2rem;
+  color: #f39c12; /* warm accent */
 }
 
 .footer-links ul {
@@ -40,13 +47,13 @@
 }
 
 .footer-links a {
-  color: white;
+  color: #ddd;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #ffddc1;
+  color: #f39c12;
 }
 
 .footer-social .footer-social-icons {
@@ -56,19 +63,20 @@
 
 .footer-social a {
   font-size: 1.5rem;
-  color: white;
+  color: #ddd;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-social a:hover {
   transform: scale(1.2);
-  color: #ffddc1;
+  color: #f39c12;
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 2rem;
   font-size: 0.9rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
   padding-top: 1rem;
+  color: #aaa;
 }

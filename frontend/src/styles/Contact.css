@@ -2,9 +2,7 @@
   max-width: 900px;
 margin: auto;
     padding: 102px 20px 40px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #3e2f1c;
-  background-color: #fffdf8;
+  background-color: #1a1a1a;
 }
 @media screen and (max-width: 480px){
   .contact-page{
@@ -13,7 +11,7 @@ margin: auto;
 }
 .contact-page h1,
 .contact-page h2 {
-  color: #D35400;
+  color: #f39c12;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -29,22 +27,22 @@ margin: auto;
   font-size: 1.1rem;
   margin-bottom: 12px;
   text-align: center;
-  color: #b55227;
+  color: #f6c069;
   line-height: 1.6;
 }
 
 .contact-info p strong {
-  color: #a84300;
+  color: #ff8800;
 }
 
 .contact-info p a {
-  color: #b55227;
+  color: #f6c069;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .contact-info p a:hover {
-  color: #a84300;
+  color: #eb9d20;
 }
 
 /* ==== Responsive Font Sizes ==== */
@@ -83,7 +81,7 @@ margin: auto;
 
 .contact-form-section h2 {
   font-size: 2rem;
-  color: #a84300;
+  color: #f39c12;
   margin-bottom: 20px;
 }
 
@@ -105,29 +103,31 @@ margin: auto;
 
 .contact-form label {
   font-weight: 600;
-  color: #a84300;
+  color: #ff8800;
 }
 
 .contact-form input,
 .contact-form textarea {
   padding: 12px;
   border-radius: 8px;
-  border: 1.5px solid #ccc;
+  border: 1.5px solid #666;
   font-size: 1rem;
   resize: vertical;
+  background-color: #222;
+  color: #ddd;
   transition: all 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #D35400;
+  border-color: #f39c12;
   box-shadow: 0 0 8px rgba(211, 84, 0, 0.5);
 }
 
 /* ==== Button Styling ==== */
 .btn-primary {
-  background-color: #D35400;
+  background-color: #f39c12;
   color: white;
   padding: 14px 28px;
   border: none;
@@ -141,7 +141,7 @@ margin: auto;
 }
 
 .btn-primary:hover {
-  background-color: #a84300;
+  background-color: #ff8800;
   transform: scale(1.05);
 }
 
@@ -195,7 +195,7 @@ margin: auto;
 .map-section h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #a84300;
+  color: #ff8800;
 }
 
 /* Google Map iframe */

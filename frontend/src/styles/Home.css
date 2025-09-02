@@ -1,20 +1,19 @@
-
-/* About Preview */
+/* About Preview - Dark Theme */
 .about-preview {
   padding: 4rem 8%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  background-color: #fff8f0; /* Light warm background */
+  background-color: #1a1a1a; /* Dark background */
 }
-.about-content{
+.about-content {
   flex: 1;
 }
 .about-preview h2 {
   font-size: 2.4rem;
   margin-bottom: 15px;
-  color: #D35400;
+  color: #f39c12; /* Warm accent */
   font-weight: 700;
 }
 
@@ -22,7 +21,7 @@
   font-size: 1.1rem;
   margin-bottom: 20px;
   line-height: 1.6;
-  color: #3e2f1c;
+  color: #ddd;
 }
 
 .about-preview img {
@@ -30,6 +29,7 @@
   max-width: 500px;
   border-radius: 12px;
   object-fit: cover;
+  filter: brightness(0.9); /* Slight darken */
 }
 
 .about-highlights {
@@ -40,21 +40,21 @@
 
 .about-highlights li {
   font-size: 1rem;
-  color: #3e2f1c;
+  color: #ddd;
   margin-bottom: 8px;
 }
 
 .about-highlights li::before {
   content: "✔";
-  color: #D35400;
+  color: #f39c12;
   font-weight: bold;
 }
 
 /* Buttons */
 .btn-secondary {
   display: inline-block;
-  background-color: #d35400;
-  color: white;
+  background-color: #f39c12;
+  color: #1a1a1a;
   padding: 12px 28px;
   border-radius: 30px;
   font-size: 1rem;
@@ -64,12 +64,13 @@
 }
 
 .btn-secondary:hover {
-  background-color: #a84300;
+  background-color: #d68910;
   transform: translateY(-2px);
+  color: #fff;
 }
 
 .btn-primary {
-  background: #b55227;
+  background: #c16c2f;
   color: white;
   padding: 0.6rem 1.5rem;
   border-radius: 5px;
@@ -78,8 +79,9 @@
 }
 
 .btn-primary:hover {
-  background: #933f1e;
+  background: #9b5120;
 }
+
 @media screen and (max-width: 992px) {
   .about-preview {
     padding: 60px 30px;
@@ -96,7 +98,7 @@
   }
 }
 
-/* ✅ Mobile */
+/* Mobile */
 @media screen and (max-width: 768px) {
   .about-preview {
     flex-direction: column;
@@ -114,15 +116,17 @@
     font-size: 0.95rem;
   }
 }
+
+/* Products Preview - Dark Theme */
 .products-preview {
-  background: #fff8f0;
+  background: #1a1a1a;
   padding: 4rem 20px;
   text-align: center;
 }
 
 .products-preview h2 {
   font-size: 2.4rem;
-  color: #d35400;
+  color: #f39c12;
   margin-bottom: 50px;
   font-weight: bold;
   letter-spacing: 1px;
@@ -137,7 +141,12 @@
 }
 
 .product-preview-card {
+  padding: 25px 0;
   width: 350px;
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .product-preview-card img {
@@ -151,17 +160,18 @@
 
 .product-preview-card h3 {
   margin-bottom: 8px;
-  color: #a84300;
+  color: #f39c12;
   font-size: 1.3rem;
   font-weight: bold;
 }
 
 .product-preview-card p {
-  color: #6b4f2d;
+  color: #ccc;
   font-size: 0.95rem;
   line-height: 1.4;
   padding: 10px 20px;
 }
+
 @media screen and (max-width: 992px) {
   .products-preview {
     padding: 60px 30px;
@@ -172,7 +182,7 @@
   }
 }
 
-/* ✅ Mobile (1-column grid) */
+/* Mobile - 1 column */
 @media screen and (max-width: 600px) {
   .products-preview {
     padding: 40px 20px;
@@ -186,34 +196,36 @@
     font-size: 0.95rem;
   }
 }
+
+/* Contact Preview - Dark Theme */
 .contact-preview {
   padding: 4rem 10%;
-  background: #fff8f0;
+  background: #1a1a1a;
   text-align: center;
-  color: #3e2f1c;
+  color: #ddd;
 }
 
 .contact-preview h2 {
   font-size: 2.4rem;
-  color: #d35400;
+  color: #f39c12;
   margin-bottom: 15px;
 }
 
 .contact-preview p {
   font-size: 1.1rem;
   margin-bottom: 25px;
-  color: #444;
+  color: #ccc;
 }
 
 .contact-preview a {
-  color: #d35400;
+  color: #f39c12;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s ease;
 }
 
 .contact-preview a:hover {
-  color: #a84300;
+  color: #ff8800;
 }
 
 .social-icons {
@@ -229,42 +241,42 @@
   align-items: center;
   gap: 8px;
   font-size: 1.2rem;
-  background: #fff;
-  color: #D35400;
+  background: #222;
+  color: #f39c12;
   text-decoration: none;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   padding: 10px 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease,border-color 0.3s ease;
 }
 
 .social-icons a:hover {
-  border-bottom: 2px solid #d35400;
+  border-bottom: 2px solid #f39c12;
   transform: translateY(-4px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.7);
 }
 
 .btn-secondary {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 28px;
-  border: 2px solid #d35400;
+  border: 2px solid #f39c12;
   border-radius: 30px;
   background: transparent;
-  color: #d35400;
+  color: #f39c12;
   font-size: 1rem;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background: #d35400;
-  color: #fff !important;
+  background: #f39c12;
+  color: #1a1a1a !important;
 }
 
-/* 📱 Responsive Breakpoints */
+/* Responsive Breakpoints */
 @media (max-width: 768px) {
   .contact-preview {
     padding: 3rem 8%;
@@ -303,18 +315,18 @@
   }
 
   .social-icons {
-    flex-direction: row; /* 🔥 Row me rakhne ke liye */
+    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap; /* agar screen chhoti ho to agli line me chale jaye */
-    gap: 12px; /* thoda chhota gap */
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   .social-icons a {
-            gap: 0;
-        flex-direction: column;
+    gap: 0;
+    flex-direction: column;
     font-size: 0.9rem;
     padding: 6px 10px;
-    flex: 0 0 auto; /* icons apne size pe rahenge */
+    flex: 0 0 auto;
   }
 
   .btn-secondary {

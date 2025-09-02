@@ -80,7 +80,7 @@ const handleSubmit = async (e) => {
             rows="5"
           ></textarea>
 
-          <button type="submit" className="btn-primary">Send Message</button>
+          <button type="submit" className="btn-secondary">Send Message</button>
         </form>
       </section>
 

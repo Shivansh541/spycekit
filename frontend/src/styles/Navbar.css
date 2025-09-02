@@ -11,11 +11,12 @@
     padding: 10px 50px;
     z-index: 100;
     color: white;
+    background: #1a1a1a;
     transition: all 0.5s ease;
 }
 
 .navbar.scrolled {
-    background: #360000;
+    background: #0d0d0d;
   padding: 5px 50px;
 }
 .navbar.scrolled a{
@@ -56,7 +57,7 @@ content: "";
     flex-direction: column;
     width: 70px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .right-nav a::after{
     content: "";
@@ -81,7 +82,7 @@ content: "";
 .hamButton span{
     height: 3px;
     width: 27px;
-    background: black;
+    background: #ddd;
     border-radius: 5px;
 }
 .navbar.scrolled .hamButton span{
@@ -113,9 +114,10 @@ content: "";
         opacity: 1;
         padding: 30px 10px;
         width: 200px;
-        padding-top: 52px;
+        height: 100%;
+        padding-top: 60px;
         z-index: 200;
-        background: #360000;
+        background: #0d0d0d;
         border-radius: 10px 0 0 10px;;
         transition: all 0.5s ease-in;
     }
@@ -128,7 +130,7 @@ content: "";
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 15px;
+        gap: 20px;
     }
     .hamMenu li{
         width: 100%;
@@ -140,31 +142,34 @@ content: "";
         align-items: center;
         text-decoration: none;
         color: white;
-        padding: 7px 0;
+        padding: 10px 0;
         width: 100%;
         border-radius: 5px;
     }
     .hamMenu a.active{
-        background: #972600;
+        background: #ff8800;
     }
     .hamMenu button{
 position: absolute;
     top: 0;
-    right: 0;
-    font-size: 27px;
+    left: 0;
+    font-size: 30px;
     background: none;
     outline: none;
     border: none;
     color: white;
     cursor: pointer;
     border: 1px solid white;
+    height: 35px;
+    width: 35px;
     border-radius: 50%;
     margin: 10px;
-    width: 30px;
-    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
     .hamMenu button:hover{
-        background: red;
+        background: #ff8800;
     }
     .hamButton{
         display: flex;
