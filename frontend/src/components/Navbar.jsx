@@ -50,10 +50,10 @@ const Navbar = () => {
       </div>
       <div className="right-nav">
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/products">Products</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><NavLink className={({isActive})=>isActive?"active":""} to="/">Home</NavLink></li>
+          <li><NavLink className={({isActive})=>isActive?"active":""} to="/about">About</NavLink></li>
+          <li><NavLink className={({isActive})=>isActive?"active":""} to="/products">Products</NavLink></li>
+          <li><NavLink className={({isActive})=>isActive?"active":""} to="/contact">Contact</NavLink></li>
         </ul>
         <div onClick={() => setShowHamMenu(true)} className="hamButton" >
           <span></span>

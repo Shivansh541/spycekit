@@ -46,7 +46,13 @@ const Home = () => {
         <div className="about-content">
           <h2>About SpyceKit</h2>
           <p>
-            At SpyceKit, we bring you spices sourced from trusted farmers, packed fresh to preserve their aroma and taste. From your grandmother’s recipes to modern delicacies, our spices turn every meal into a story worth sharing.
+            At Spycekit we believe that spices are more
+            than just ingredients - they are the heart of
+            every Indian kitchen.
+            We source directly from trusted farmers,
+            handpick the best quality crops, and ensure
+            that every pack you open fills your kitchen with
+            authentic aroma and freshness.
           </p>
           <ul className="about-highlights">
             <li> 100% Natural & Pure</li>
