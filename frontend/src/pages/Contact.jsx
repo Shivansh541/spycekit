@@ -107,7 +107,7 @@ const handleSubmit = async (e) => {
   <FontAwesomeIcon icon = {faInstagram}/>Instagram
 </a>
 
-        <a href="https://facebook.com/yourspices" target="_blank" rel="noreferrer">
+        <a href="https://facebook.com/spycekit" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faFacebook} /> Facebook
         </a>
         <a href="https://www.linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
