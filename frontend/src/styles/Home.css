@@ -1,47 +1,41 @@
 /* About Preview - Dark Theme */
 .about-preview {
-  padding: 4rem 8%;
+  padding: 90px 80px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
-  background-color: #1a1a1a; /* Dark background */
-}
-.about-content {
-  flex: 1;
+  background-color: #111111; /* Dark background */
 }
 .about-preview h2 {
-  font-size: 2.4rem;
-  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: medium;
+  margin-bottom: 20px;
   color: #f39c12; /* Warm accent */
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .about-preview p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  color: #ddd;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 28px;
+  color: #cfcfcf;
+  max-width: 500px;
 }
 
 .about-preview img {
   width: 45%;
   max-width: 500px;
-  border-radius: 12px;
+  border-radius: 20px;
   object-fit: cover;
   filter: brightness(0.9); /* Slight darken */
+  border: 2px solid #ffbe3c70;
 }
 
 .about-highlights {
   list-style: none;
   padding: 0;
-  margin: 0 0 25px 0;
-}
-
-.about-highlights li {
-  font-size: 1rem;
-  color: #ddd;
-  margin-bottom: 8px;
 }
 
 .about-highlights li::before {
@@ -54,7 +48,7 @@
 .btn-secondary {
   display: inline-block;
   background-color: #f39c12;
-  color: #1a1a1a;
+  color: #111111;
   padding: 12px 28px;
   border-radius: 30px;
   font-size: 1rem;
@@ -89,6 +83,8 @@
   }
   .about-content h2 {
     font-size: 1.75rem;
+    line-height: 2rem;
+        margin-bottom: 15px;
   }
   .about-content p {
     font-size: 1rem;
@@ -119,7 +115,7 @@
 
 /* Products Preview - Dark Theme */
 .products-preview {
-  background: #1a1a1a;
+  background: #111111;
   padding: 4rem 20px;
   text-align: center;
 }
@@ -143,7 +139,7 @@
 .product-preview-card {
   padding: 25px 0;
   width: 350px;
-  background: #222;
+  background: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0,0,0,0.5);
@@ -200,7 +196,7 @@
 /* Contact Preview - Dark Theme */
 .contact-preview {
   padding: 4rem 10%;
-  background: #1a1a1a;
+  background: #111111;
   text-align: center;
   color: #ddd;
 }
@@ -241,7 +237,7 @@
   align-items: center;
   gap: 8px;
   font-size: 1.2rem;
-  background: #222;
+  background: #1a1a1a;
   color: #f39c12;
   text-decoration: none;
   font-weight: 600;
@@ -273,7 +269,7 @@
 
 .btn-secondary:hover {
   background: #f39c12;
-  color: #1a1a1a !important;
+  color: #111111 !important;
 }
 
 /* Responsive Breakpoints */

@@ -38,7 +38,6 @@ const Home = () => {
     }
   ];
   return (
-
     <div className="home">
       <Hero />
       {/* About Preview */}
@@ -53,13 +52,13 @@ const Home = () => {
             handpick the best quality crops, and ensure
             that every pack you open fills your kitchen with
             authentic aroma and freshness.
+            <ul className="about-highlights">
+              <li> 100% Natural & Pure</li>
+              <li> No Artificial Colors or Preservatives</li>
+              <li> Sourced Directly from Farms</li>
+              <li> Packed Fresh for Long-Lasting Flavor</li>
+            </ul>
           </p>
-          <ul className="about-highlights">
-            <li> 100% Natural & Pure</li>
-            <li> No Artificial Colors or Preservatives</li>
-            <li> Sourced Directly from Farms</li>
-            <li> Packed Fresh for Long-Lasting Flavor</li>
-          </ul>
           <a href="/about" className="btn-secondary">Read More</a>
         </div>
         <img src="/assets/images/freepik__the-style-is-candid-image-photography-with-natural__95737.png" alt="" />

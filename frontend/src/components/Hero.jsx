@@ -5,8 +5,12 @@ const Hero = () => {
         <section className="hero">
             <div className="slide1">
                 <div className="left-slide1">
-                    <h1>Har swaad ki ek hi kit – <span style={{color: "#c02800"}}>Spycekit</span></h1>
-                    <p>From farm to your kitchen - spice that tells a story</p>
+                    <h3>Khushiyon Ki Kit</h3>
+                    <h1>Spices That Add Flavour To Happiness</h1>
+                    <p>Premium quality spices, hygienically packed to bring joy and authenticity</p>
+                </div>
+                <div className="right-slide1">
+                    <img src="/assets/images/Frame 5 (1).svg" alt="packets" />
                 </div>
             </div>
         </section>

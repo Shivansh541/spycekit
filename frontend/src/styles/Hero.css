@@ -1,92 +1,135 @@
-.hero{
+/* .hero{
   height: 100vh;
-}
+} */
 .slide1 {
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 4%;
-  background: url('../assets/images/Spycekit\ banner\ 1.png') no-repeat center center/cover;
+  padding: 60px 80px;
+  padding-top: 92px;
+  background: linear-gradient(90deg, #0f0f0f 10%, #4f0404);
   position: relative;
   overflow: hidden;
 }
-/* .slide1::before{
+
+.slide1::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
-  background: linear-gradient(135deg, rgb(0,0,0),rgb(255,255,255));
-  } */
+  top: 0;
+  left: 0;
+  background: url("../assets/images/realistic-grainy-texture.png") no-repeat center center/cover;
+  opacity: 0.06;
+  z-index: 1;
+}
 
-/* Left section text */
-.left-slide1 {
-  flex: 1;
+.left-slide1,
+.right-slide1 {
   z-index: 2;
-  max-width: 450px;
 }
 
-.left-slide1 h1 {
-  font-size: 3.5rem;
-  color: #210e06; /* dark brown for spice theme */
-  margin-bottom: 20px;
-  line-height: 1.2;
+.slide1 * {
+  font-family: "Poppins", sans-serif;
 }
 
-.left-slide1 p {
-  font-size: 1.2rem;
-  color: #210e06;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.slide1 h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffbe3c;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
 }
-.left-slide1 button{
-        padding: 10px 16px;
-    border: 1px solid black;
-    outline: none;
-    background: #932101;
-    color: white;
-    border-radius: 7px;
-  }
-  @media screen and (max-width:1100px) {
 
-    .left-slide1 h1{
-      font-size: 2rem;
-    }
-    .left-slide1 p{
-      font-size: 1rem;
-    }
-    
+.slide1 h1 {
+  max-width: 420px;
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 50px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.slide1 p {
+  font-size: 14px;
+  color: #c8c8c8;
+  line-height: 26px;
+  max-width: 400px;
+  letter-spacing: 2px;
+}
+.slide1 img{
+  width: 100%;
+  transition: transform 0.3s ease-in;
+}
+.slide1 img:hover{
+  transform: translateY(-3px);
+}
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .slide1 {
+    padding: 40px 50px;
+    padding-top: 92px;
+    gap: 30px;
+  }
+  
+  .slide1 h1 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  
+  .slide1 p {
+    font-size: 13px;
+    line-height: 24px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .slide1 {
+  background: linear-gradient(180deg, #0f0f0f 10%, #4f0404);
+    padding: 30px 20px;
+    padding-top: 92px;
+    flex-direction: column;
+    text-align: center;
   }
 
-  @media screen and (max-width:768px) {
-    .hero{
-      height: 70vh;
-    }
-    .slide1{
-      padding: 90px 20px;
-      align-items: flex-start;
-      background: url('../assets/images/mobile\ banner.png') no-repeat center center/cover;
-    }
-    .left-slide1{
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .left-slide1 h1{
-      font-size: 2.5rem;
-    }
-    .left-slide1 p{
-      font-size: 1.2rem;
-    }
+  .slide1 h1 {
+    font-size: 28px;
+    line-height: 36px;
+    max-width: 100%;
   }
-  @media screen and (max-width:480px) {
-    .left-slide1 h1{
-      font-size: 1.8rem;
-    }
-    .left-slide1 p{
-      font-size: 0.9rem;
-    }
+
+  .slide1 p {
+    font-size: 12px;
+    line-height: 22px;
+    max-width: 100%;
   }
+
+  .left-slide1,
+  .right-slide1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .slide1 h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .slide1 h3 {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .slide1 p {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}

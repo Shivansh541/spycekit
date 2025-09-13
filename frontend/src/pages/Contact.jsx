@@ -10,24 +10,24 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-const handleSubmit = async (e) => {
-  e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  try {
-    await fetch("https://script.google.com/macros/s/AKfycbxtboo6p2MoyyqkPiYhqVXn5jt782mvZxpSHKODwPC56fWvbCcUjlqjUdGPcGOx4n8H/exec", {
-      method: "POST",
-      mode: "no-cors",
-      body: JSON.stringify(formData),
-      headers: { "Content-Type": "application/json" },
-    });
+    try {
+      await fetch("https://script.google.com/macros/s/AKfycbxtboo6p2MoyyqkPiYhqVXn5jt782mvZxpSHKODwPC56fWvbCcUjlqjUdGPcGOx4n8H/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json" },
+      });
 
-    // Don't check response.ok since it's opaque
-    setSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
-  } catch (error) {
-    alert("Error: " + error.message);
-  }
-};
+      // Don't check response.ok since it's opaque
+      setSubmitted(true);
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      alert("Error: " + error.message);
+    }
+  };
 
 
 
@@ -87,32 +87,31 @@ const handleSubmit = async (e) => {
       {/* Map */}
       <section className="map-section">
         <h2>Our Location</h2>
-        {/* Replace the iframe src with your actual Google Maps embed link */}
-        <iframe
-          title="Company Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.9154215536573!2d77.06918387408612!3d28.45196589226004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18ec599ce239%3A0xd9085a670afed09a!2s93%2C%20Sector%2044%2C%20Gurugram%2C%20Haryana%20122003!5e0!3m2!1sen!2sin!4v1755167772729!5m2!1sen!2sin"
-          width="100%"
-          height="300"
-          style={{ border: 0 }}
-          allowFullScreen=""
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d523.6434282073717!2d77.07131556162258!3d28.451939388722376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19e228ae8477%3A0x4822968973b40601!2sSpycekit!5e0!3m2!1sen!2sin!4v1757657786330!5m2!1sen!2sin"
+          title="Location"
+          width="600"
+          height="450"
+          style={{ border: "0" }}
+          allowfullscreen=""
           loading="lazy"
-        ></iframe>
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </section>
 
       {/* Social Media */}
       <section className="social-media">
         <h2>Follow Us</h2>
         <div className="social-icons">
-<a href="https://instagram.com/spycekit" target="_blank" rel="noopener noreferrer">
-  <FontAwesomeIcon icon = {faInstagram}/>Instagram
-</a>
+          <a href="https://instagram.com/spycekit" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} />Instagram
+          </a>
 
-        <a href="https://facebook.com/spycekit" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faFacebook} /> Facebook
-        </a>
-        <a href="https://www.linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
-          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-        </a>
+          <a href="https://facebook.com/spycekit" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faFacebook} /> Facebook
+          </a>
+          <a href="https://www.linkedin.com/company/spycekit" target="_blank" rel="noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+          </a>
         </div>
       </section>
     </div>
