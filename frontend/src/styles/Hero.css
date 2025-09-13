@@ -29,7 +29,9 @@
 .right-slide1 {
   z-index: 2;
 }
-
+.right-slide1{
+  width: 50%;
+}
 .slide1 * {
   font-family: "Poppins", sans-serif;
 }

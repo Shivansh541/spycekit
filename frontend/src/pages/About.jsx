@@ -112,7 +112,7 @@ const About = () => {
       </div>
 
       <div className="story-image">
-        <img src='/assets/images/Rustic Spice Collection in Earthy Bowls.png' alt="SpyceKit Story" />
+        <img src='/assets/images/Rustic Spice Collection in Earthy Bowls.webp' alt="SpyceKit Story" />
       </div>
     </section>
 

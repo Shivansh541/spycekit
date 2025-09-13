@@ -10,7 +10,7 @@ const Hero = () => {
                     <p>Premium quality spices, hygienically packed to bring joy and authenticity</p>
                 </div>
                 <div className="right-slide1">
-                    <img src="/assets/images/Frame 5 (1).svg" alt="packets" />
+                    <img src="/assets/images/Frame 5 (1).png" alt="packets" />
                 </div>
             </div>
         </section>
