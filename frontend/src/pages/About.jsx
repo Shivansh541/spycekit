@@ -98,7 +98,7 @@ const About = () => {
       <div className="story-content">
         <h1>Our Story</h1>
         <p>
-          SpyceKit was founded in 2025 with a simple idea — 
+          SpyceKit is a brand by Zaikaverse Foods Private Limited founded in 2025 with a simple idea — 
           to bring authentic, fresh, and high-quality spices directly to every kitchen. 
           What began as a small passion project quickly grew into a brand that celebrates 
           the rich tradition of spices while meeting the needs of today’s cooks. 

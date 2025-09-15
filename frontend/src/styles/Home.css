@@ -139,10 +139,8 @@
 .product-preview-card {
   padding: 25px 0;
   width: 350px;
-  background: #1a1a1a;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
 }
 
 .product-preview-card img {
